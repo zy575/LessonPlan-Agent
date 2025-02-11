@@ -21,12 +21,8 @@
 ```
 {}
 ```
-## strategies
 
-```
-{}
-```
-## {component content}
+## strategies
 
 ```
 {}

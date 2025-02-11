@@ -21,8 +21,5 @@ Explanation: The main content of this lesson is about water molecules introduced
 Teacher: Now please discuss in groups, how do you think water molecules move within a plant? Student: We think water molecules might enter the plant through the roots and then be released through the leaves. Teacher: Very good, that's a great hypothesis.
 Output:
 <h1>Make Hypotheses Based on the Problem (5min)</h1>
-<h2>1. Group Discussion</h2>
-Teacher: Now please discuss in groups, what do you think water is composed of, and does water exist in only one state? Student 1: We think water is composed of water molecules. Student 2: We think water exists in solid, liquid, and gaseous states. The water we normally see is in liquid form, water vapor is gaseous, and ice is solid. Teacher: You are all correct, water is composed of water molecules and exists in solid, liquid, and gaseous states. Teacher: Now please think about how water is formed and how we can utilize water in nature. 
-Student 1: ... 
-Student 2: ... 
+
 ```
