@@ -1,20 +1,18 @@
 # LessonPlan-Agent
 
----
-
 ## Introduction
 
----
+
 
 **LessonPlan-Agent** is a novel framework, which leverages multi-role LLM-based agents to generate high-quality lesson plans. The framework involves three distinct agents: a novice teacher, an administrative teacher, and a senior teacher, working collaboratively through four stages: initial draft creation, knowledge integration, adjustment of the draft by expert review, and lesson plan refinement and finalization. The performance of **LessonPlan-Agent** is evaluated across five subjects—mathematics, English, chemistry, science, and information technology—using evaluation metrics developed by experienced teachers. The evaluation, performed by teacher education students, demonstrates that **LessonPlan-Agent** outperforms state-of-the-art models, highlighting the effectiveness of the multi-role agent framework in enhancing automated lesson plan generation. We compare our framework with  six state-of-the-art LLMs on five subjects and demonstrate its high performance.
 
 ![1739264330525](image/README/framework.png)
 
----
+
 
 ## Running the Code
 
----
+
 
 ### The results of baselines
 
@@ -34,6 +32,5 @@ python consistent.py
 
 ## Prompt
 
----
 
 There are many prompt words used in LessonPlan-Agent. Some of them are now saved in `./code/prompt`.
