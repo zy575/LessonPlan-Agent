@@ -74,12 +74,14 @@ for root, dirs, files in os.walk(root_dir):
         for key, value in sheets_dict[sheet_name_list[0]].items():
             # print(key)
             # print(value, value2, value3)
-            
+            # value = math.floor(float(value)) if isinstance(value, str) else math.floor(value)
             value2 = sheets_dict[sheet_name_list[1]][key]
             value3 = sheets_dict[sheet_name_list[2]][key]
             value = [math.floor(float(i)) for i in value]
             value2 = [math.floor(float(i)) for i in value2]
             value3 = [math.floor(float(i)) for i in value3]
+            print(value, value2, value3)
+
             kappa_12 = cohen_kappa_score(value, value2)
             kappa_13 = cohen_kappa_score(value, value3)
             kappa_23 = cohen_kappa_score(value2, value3)
@@ -138,7 +140,7 @@ for key, value in model_dict_consistent.items():
     temp = [key]
     for subject in subject_list:
         try:
-            temp.append(value[subject][0])
+            temp.append(round(float(value[subject][0]),3))
         except:
             temp.append(0)
             
