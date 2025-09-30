@@ -1,18 +1,12 @@
-# LessonPlan-Agent
+# COMA
 
 ## Introduction
 
-
-
-**LessonPlan-Agent** is a novel framework, which leverages multi-role LLM-based agents to generate high-quality lesson plans. The framework involves three distinct agents: a novice teacher, an administrative teacher, and a senior teacher, working collaboratively through four stages: initial draft creation, knowledge integration, adjustment of the draft by expert review, and lesson plan refinement and finalization. The performance of **LessonPlan-Agent** is evaluated across five subjects—mathematics, English, chemistry, science, and information technology—using evaluation metrics developed by experienced teachers. The evaluation, performed by teacher education students, demonstrates that **LessonPlan-Agent** outperforms state-of-the-art models, highlighting the effectiveness of the multi-role agent framework in enhancing automated lesson plan generation. We compare our framework with  six state-of-the-art LLMs on five subjects and demonstrate its high performance.
+COMA is a collaborative multi-role agent framework for automatic high-quality lesson plans generation. COMA formulates lesson plan generation as a structured workflow among three pedagogical agents: (1) the novice agent, representing a novice teacher, drafts the initial lesson plan by outlining an overarching lesson flow, though with limited precision in specifying instructional actions; (2) the veteran agent, representing an experienced teacher, enriches the draft with domain-specific knowledge by leveraging Retrieval-Augmented Generation (RAG) to retrieve authoritative content from curriculum-aligned textbooks; and (3) the master agent, representing a pedagogical expert, refines the draft through error detection, adaptation, and knowledge mapping, ensuring instructional coherence and responsiveness. An iterative workflow coordinates these agents, allowing the generated lesson plan to be progressively improved until a high-quality, deployable plan is produced, which simulates the collaborative and iterative lesson preparation process in real-world teaching practice. We evaluate COMA on lesson plan generation tasks across five subjects: mathematics, English, chemistry, science, and information technology. To ensure rigor and fairness, subject-matter educational experts designed evaluation metrics tailored to the pedagogical requirements of each subject. Experimental results demonstrate that COMA consistently outperforms state-of-the-art methods, producing lesson plans with superior quality, coherence, and pedagogical alignment.
 
 ![1739264330525](image/README/framework.png)
 
-
-
 ## Running the Code
-
-
 
 ### The results of baselines
 
@@ -31,6 +25,5 @@ python consistent.py
 ```
 
 ## Prompt
-
 
 There are many prompt words used in LessonPlan-Agent. Some of them are now saved in `./code/prompt`.
